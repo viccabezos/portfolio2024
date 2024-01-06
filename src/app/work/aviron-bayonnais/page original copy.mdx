@@ -1,0 +1,77 @@
+
+import logo from '@/images/clients/family-fund/logomark-dark.svg'
+import imageHero from './hero.jpg'
+import imageDebraFiscal from './debra-fiscal.jpg'
+
+export const caseStudy = {
+  client: 'Aviron Bayonnais',
+  title: 'Allez les bleus et blancs!',
+  description:
+    'Transformed the online experience for Aviron Bayonnais Rugby Team, elevating their digital presence and enhancing fan engagement.',
+   summary: [
+    'Enhancing Digital Presence and Fan Engagement:',
+    'Transformed the online experience for Aviron Bayonnais Rugby Team, elevating their digital presence and enhancing fan engagement.',
+    'Implementing Custom Solutions:',
+    'Developed tailor-made solutions to meet the unique needs of a professional sports team, ensuring seamless interaction with fans.',
+    'Key Achievements and Contributions:',
+    '1. Interactive Fan Platform: Created an interactive fan platform that allowed supporters to connect, share experiences, and stay updated on team news and events.',
+    '2. Dynamic Content Management: Implemented a custom content management system (CMS) to efficiently manage and showcase dynamic content, including match highlights, player profiles, and team news.',
+    '3. Real-time Updates: Integrated real-time updates for live scores, game statistics, and post-match analysis, enhancing the overall fan experience.',
+    '4. Mobile Optimization: Ensured optimal performance across various devices, with a focus on mobile responsiveness for fans on the go.',
+    '5. Social Media Integration: Seamlessly integrated social media feeds and sharing functionalities, fostering community engagement and amplifying the team\'s social media presence.',
+    'Collaboration and Feedback:',
+    'Collaborated closely with the Aviron Bayonnais Rugby Team to understand their goals and vision, incorporating feedback to deliver a solution that resonates with both the team and its supporters.',
+    'Impact on Fan Base:',
+    'The implemented digital solutions significantly contributed to an increase in fan interaction, fostering a stronger connection between the team and its supporters. This project exemplifies the successful fusion of technology and sports, enhancing the overall fan experience for Aviron Bayonnais Rugby Team.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2022-01',
+  type: 'professional, Origins Digital',
+  service: 'Web development, CMS',
+  testimonial: {
+    author: { name: 'Debra Fiscal', role: 'CEO of FamilyFund' },
+    content:
+      'Working with Studio, we felt more like a partner than a customer. They really resonated with our mission to change the way people convince their parents to cash out their pensions.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Having written one of the most shared posts on medium.com (“_How to cash out your Dad’s 401K without him knowing_”) FamilyFund approached us looking to build out their own blog.
+
+The blog would help drive new traffic to their site and serve as a resource-hub for users already trying to exploit their network for money. Because it was so important that they own their own content, we decided that an on-prem solution would be best.
+
+We installed 24 Mac Minis bought from craigslist in the storage cupboard of their office. One machine would be used for the web server and another one for the build server. The other 22 were for redundancy, and to DDOS squarespace.com every few months to keep them on their toes.
+
+To optimise their search traffic we used an innovative technique. Every post has a shadow post only visible to web crawlers that is some variation of _“Gary Vee is looking to invest in new founders”_. Like bees to honey.
+
+## What we did
+
+<TagList>
+  <TagListItem>Frontend (Next.js)</TagListItem>
+  <TagListItem>Custom CMS</TagListItem>
+  <TagListItem>SEO</TagListItem>
+  <TagListItem>Infrastructure</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Debra Fiscal', role: 'CEO of FamilyFund' }}
+  image={{ src: imageDebraFiscal }}
+>
+  Working with Studio, we felt more like a partner than a customer. They really
+  resonated with our mission to change the way people convince their parents to
+  cash out their pensions.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="25%" label="Less traffic" />
+  <StatListItem value="10x" label="Page load times" />
+  <StatListItem value="15%" label="Higher infra costs" />
+  <StatListItem value="$1.2M" label="Legal fees" />
+</StatList>
