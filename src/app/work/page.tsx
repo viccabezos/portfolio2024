@@ -101,7 +101,7 @@ function CaseStudies({
 
 const clients = [
   // ['Phobia', logoPhobia],
-  ['Aviron Bayonnais', logoOriginsBw],
+  ['Aviron Bayonnais', logoOriginsBw.src],
   // ['Unseal', logoUnseal],
   // ['Mail Smirk', logoMailSmirk],
   // ['Home Work', logoHomeWork],
