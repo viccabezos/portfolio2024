@@ -77,12 +77,12 @@ export default async function CaseStudyLayout({
       {moreCaseStudies.length > 0 && (
         <PageLinks
           className="mt-24 sm:mt-32 lg:mt-40"
-          title="More case studies"
+          title="More showcases"
           pages={moreCaseStudies}
         />
       )}
 
-      <ContactSection />
+      {/* <ContactSection /> */}
     </>
   )
 }

@@ -155,7 +155,7 @@ export default async function Work() {
         title="Some of the projects i have worked on"
       >
         <p>
-        I&quot;ve worked in a lot of little projects over the lasts 3 years, i have selected the ones that I&quot;m most happy of. Some of them are from school, others are personal or for friends, others are professional.
+        I&apos;ve worked in a lot of little projects over the lasts 3 years, i have selected the ones that I&quot;m most happy of.<br/> Some of them are from school, others are personal or for friends, others are professional.
 
         </p>
       </PageIntro>

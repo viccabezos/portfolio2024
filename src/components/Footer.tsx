@@ -10,7 +10,9 @@ const navigation = [
     title: 'Work',
     links: [
       { title: 'Aviron Bayonnais', href: '/work/aviron-bayonnais' },
-      // { title: 'Unseal', href: '/work/unseal' },
+      { title: 'Sportlab 2023', href: '/work/sportlab-2023' },
+      { title: 'Sportlab 2024', href: '/work/sportlab-2024' },
+      { title: 'Origins Digital', href: '/work/origins-digital' },
       // { title: 'Phobia', href: '/work/phobia' },
       {
         title: (
@@ -23,11 +25,11 @@ const navigation = [
     ],
   },
   {
-    title: 'Company',
+    title: 'More',
     links: [
-      { title: 'About', href: '/about' },
+      { title: 'About Me', href: '/about' },
       // { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
+      // { title: 'Blog', href: '/blog' },
       // { title: 'Contact us', href: '/contact' },
     ],
   },

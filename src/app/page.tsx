@@ -20,6 +20,7 @@ import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
+import { ArrowIcon } from '@/components/ArrowIcon'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -68,17 +69,17 @@ function CaseStudies({
 }) {
   return (
     <>
-      <SectionIntro
+      {/* <SectionIntro
         title="Harnessing technology for a brighter future"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          I believe technology is the answer and the cause to the world’s greatest
+          challenges.
         </p>
-      </SectionIntro>
+      </SectionIntro> */}
       <Container className="mt-16">
+      
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {caseStudies.map((caseStudy) => (
             <FadeIn key={caseStudy.href} className="flex">
@@ -104,7 +105,7 @@ function CaseStudies({
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
-                  <span>Case study</span>
+                  <span>{caseStudy.client}</span>
                 </p>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
                   {caseStudy.title}
@@ -115,6 +116,15 @@ function CaseStudies({
               </article>
             </FadeIn>
           ))}
+          <Link
+          href={'/work'}
+          className="mt-6 flex gap-x-3 text-base font-semibold text-neutral-950 transition hover:text-neutral-700"
+          // aria-label={`Read more: ${page.title}`}
+        >
+          See full Portfolio
+          <ArrowIcon className="w-6 flex-none fill-current" />
+          <span className="absolute inset-0" />
+        </Link>
         </FadeInStagger>
       </Container>
     </>
@@ -174,7 +184,7 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'Welcome to Victoria&apos;s portfolio',
 }
 
 export default async function Home() {
@@ -185,11 +195,10 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-          Welcome.
+          Welcome!
           </h1>
-          <p className="mt-6 text-xl text-neutral-600">
-            My name is <span className='font-semibold'>Victoria Cabezos</span>, i&apos;m React web developper based near Biarritz, France.
-          </p>
+          
+          <p className="mt-6 text-xl text-neutral-600">I&apos;m <span className='font-semibold'>Victoria Cabezos</span>, a web developer located near Biarritz, France. While I am proficient as a Full-Stack developer, my current focus and expertise lie in Front-end development using React and its frameworks.</p>
         </FadeIn>
       </Container>
 
@@ -197,18 +206,18 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
+      {/* <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
         The team at Studio went above and beyond with our onboarding, even
         finding a way to access the user’s microphone without triggering one of
         those annoying permission dialogs.
-      </Testimonial>
+      </Testimonial> */}
 
-      <Services />
+      {/* <Services /> */}
 
-      <ContactSection />
+      {/* <ContactSection /> */}
     </>
   )
 }

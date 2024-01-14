@@ -28,27 +28,24 @@ function Culture() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        eyebrow="About me"
+        title="Balancing my passion with my passion for life."
         invert
       >
         <p>
-          We are a group of like-minded people who share the same core values.
+         When i am not coding I ... 
         </p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          <GridListItem title="Travel" invert>
+            I love to discover the world.<br/> By van, plane or boat, the world is big as beautiful. <br/> Do you love travel ?
           </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          <GridListItem title="Surf" invert>
+            it is my second passion, the ocean, the first. Longboarder or shortboarder ? <br/>I&apos;ll let you guess. 
           </GridListItem>
-          <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          <GridListItem title="Explore" invert>
+            I love meeting new people and share their living experiences. <br/>All around a cup of tea or a drink, sharing is caring!
           </GridListItem>
         </GridList>
       </Container>
@@ -179,7 +176,7 @@ function Team() {
 }
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'About Me',
   description:
     'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
 }
@@ -187,39 +184,56 @@ export const metadata: Metadata = {
 export default async function About() {
   let blogArticles = (await loadArticles()).slice(0, 2)
 
+
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About me" title="Open to work">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+        As a Developer, I strive to create and improve digital platforms by implementing the latest in technology to meet client&apos;s needs.
         </p>
-        <div className="mt-10 max-w-2xl space-y-6 text-base">
-          <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+        <div className="mt-4 max-w-2xl space-y-2 text-base">
+        <p>
+          Current residency: France
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+          Spoken languages: English, French, Spanish
           </p>
+       
         </div>
+        <div className='flex flex-col gap-2 w-full justify-evenly'>
+<Border position="left" className='my-10 pl-8'>
+        <p className="font-display text-sm font-bold uppercase tracking-widest text-neutral-950">
+        Front-end
+        </p>
+        <div className="mt-4">React, Next.js, Node.js, Typescript, Javascript, Tailwind, Mantine, Axios
+
+</div>
+      </Border>
+      <Border position="left" className='my-10 pl-8'>
+        <p className="font-display text-sm font-bold uppercase tracking-widest text-neutral-950">
+        Back-end
+        </p>
+        <div className="mt-4">Node.js, Typescript, MySQL, Prisma, React Query, GraphQl
+</div>
+      </Border>
+</div>
       </PageIntro>
+     
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="+2" label="Year experience" />
+          <StatListItem value="+10" label="Professional projects" />
+          <StatListItem value="100%" label="Ready to new challenges" />
         </StatList>
+
+       
+
       </Container>
+ 
 
       <Culture />
 
-      <Team />
+      {/* <Team /> */}
 
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
@@ -228,7 +242,7 @@ export default async function About() {
         pages={blogArticles}
       />
 
-      <ContactSection />
+      {/* <ContactSection /> */}
     </>
   )
 }
